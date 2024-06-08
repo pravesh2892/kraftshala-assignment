@@ -1,3 +1,28 @@
+# Weather App
+
+![Dark Mode Screenshot](link_to_dark_mode_screenshot.png)
+![Light Mode Screenshot](link_to_light_mode_screenshot.png)
+
+## Live Demo
+
+Check out the live application here: [Weather App Live Demo](https://kraftshala-pravesh-assignment.vercel.app/)
+
+## Overview
+
+This Weather App is a frontend application that provides users with current weather information based on their input. It's built using HTML, CSS, and JavaScript (React framework) and integrates with the Open Weather API to fetch real-time weather data.
+
+## Features
+
+- **Current Weather**: Display current location, temperature, date, and time.
+- **Location Search**: Users can enter a city name or zip code to fetch weather information.
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.
+- **Dark Mode**: Toggle between dark and light themes for comfortable viewing in any environment.
+- **Multiple Locations**: View weather information for multiple cities simultaneously.
+- **Detailed Weather Info**: Additional weather details like humidity, wind speed, and weather description.
+
+## Installation and Setup
+
+1. Clone the repository:
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
