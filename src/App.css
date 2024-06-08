@@ -1,0 +1,348 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #f0f0f0;
+  background-image: url('https://media.istockphoto.com/id/458891043/photo/clouds-in-the-blue-sky.jpg?s=612x612&w=0&k=20&c=1GlfZE0d2du9RNlqXxWK8hBBtDHiA1dN2ik5XRRMz5g=');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+}
+
+.light-mode .navbar {
+  background-color: #b2ddef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode button {
+  background-color: #87CEEB;
+  color: #ffffff;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-image: url('https://media.istockphoto.com/id/1340644354/photo/dramatic-blue-green-sky-gloomy-heavy-thunderclouds-dark-teal-sky-background.jpg?s=612x612&w=0&k=20&c=0zsvd0gOppKmPRdvWMqGOUdHDy19MCc-EwZGWzaERT4=');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #f0f0f0;
+}
+
+.dark-mode .navbar {
+  background-color: #0b100e;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode button {
+  background-color: #012448;
+  color: #ffffff;
+}
+.dark-mode .remove-btn {
+  color: #ddd;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* SearchBar Component */
+.search-bar {
+  flex-grow: 1;
+  max-width: 500px;
+  margin: 0 2rem;
+}
+
+.search-bar form {
+  display: flex;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  opacity: 0.9;
+}
+
+/* DarkModeToggle Component */
+.dark-mode-toggle button {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* WeatherCard Component */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.weather-card {
+  position: relative;
+  background-color: rgba(210, 209, 209, 0.3);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.weather-card h2 {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+.weather-card p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.weather-main {
+  margin-bottom: 2rem;
+}
+
+.weather-main .temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weather-main .description {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0.5rem 0 1rem;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.detail-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.detail-img{
+  height: 15px;
+  width: 15px;
+}
+.detail-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.detail-value{
+  margin-right: 0.5rem;
+}
+
+.weather-date {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+ /* DarkModeToggle component */
+.dark_mode {
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+.dark_mode_label {
+  width: 65px;
+  height: 30px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+      inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dark_mode_label:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: linear-gradient(180deg, #f7ce98, #f4b04b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.dark_mode_input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.dark_mode_input:checked + .dark_mode_label {
+  background: #242424;
+}
+.dark_mode_input:checked + .dark_mode_label:after {
+  left: 62px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+.dark_mode_label:active:after {
+  width: 30px;
+}
+
+.dark_mode_label svg {
+  position: absolute;
+  width: 20px;
+  top: 5px;
+  z-index: 100;
+}
+.dark_mode_label svg.sun {
+  left: 5px;
+  fill: #fff;
+  transition: 0.3s;
+}
+.dark_mode_label svg.moon {
+  left: 40px;
+  fill: #a4a4a4;
+  transition: 0.3s;
+}
+.dark_mode_input:checked + .dark_mode_label svg.sun {
+  fill: white;
+}
+.dark_mode_input:checked + .dark_mode_label svg.moon {
+  fill: #fff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo, .search-bar, .dark-mode-toggle {
+    margin-bottom: 1rem;
+  }
+
+  .search-bar {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  main {
+    margin: 1rem auto;
+  }
+
+  .weather-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .weather-card p {
+    font-size: 1rem;
+  }
+  .weather-icon {
+    width: 100px;
+  }
+
+  .weather-details {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .detail-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .search-bar form {
+    flex-direction: column;
+  }
+
+  .search-bar input {
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .search-bar button {
+    border-radius: 0 0 4px 4px;
+  }
+  .weather-details {
+    grid-template-columns: 1fr;
+  }
+}
