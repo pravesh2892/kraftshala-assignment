@@ -1,7 +1,7 @@
 # Weather App
 
-![Dark Mode Screenshot](link_to_dark_mode_screenshot.png)
-![Light Mode Screenshot](link_to_light_mode_screenshot.png)
+![Dark Mode Screenshot](./assets/darkMode.png)
+![Light Mode Screenshot](./assets/light-mode.png)
 
 ## Live Demo
 
