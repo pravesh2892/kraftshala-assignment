@@ -35,15 +35,14 @@ This Weather App is a frontend application that provides users with current weat
 
 1. On launch, the app displays weather information for your current location (requires location permission).
 2. Enter a city name or zip code in the search bar and press Enter or click the search icon.
-3. The app will display the current weather, temperature, date, and time for the entered location.
+3. The app will display the current weather, temperature,feels like, humidity, max temperature, min-temrature, wind speed, date,time for the entered location.
 4. Use the toggle switch to change between dark and light modes.
-5. To add multiple locations, click the "+" icon next to the search bar, enter another location, and repeat.
+5. To add multiple locations, click on the search bar, enter another location, and repeat.
 
 ## Technologies Used
 
 - **React**: For building the user interface.
-- **Axios**: For making API requests.
-- **CSS Modules**: For scoped and modular styling.
+- **fetch**: For making API requests.
 - **Open Weather API**: For fetching weather data.
 
 ## Project Structure
