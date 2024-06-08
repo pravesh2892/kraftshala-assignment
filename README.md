@@ -1,7 +1,11 @@
 # Weather App
 
-![Dark Mode Screenshot](./assets/darkMode.png)
-![Light Mode Screenshot](./assets/light-mode.png)
+
+![image](https://github.com/pravesh2892/kraftshala-assignment/assets/112716122/c5ad3343-c14f-4c7e-9ee2-008761ec92f0)
+
+![image](https://github.com/pravesh2892/kraftshala-assignment/assets/112716122/a87781bc-676b-4936-bdd6-c2428b525736)
+
+
 
 ## Live Demo
 
