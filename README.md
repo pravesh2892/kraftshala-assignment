@@ -1,15 +1,17 @@
 # Weather App
 
 
-![image](https://github.com/pravesh2892/kraftshala-assignment/assets/112716122/c5ad3343-c14f-4c7e-9ee2-008761ec92f0)
+![image](https://github.com/pravesh2892/kraftshala-assignment/assets/112716122/b6205d56-6f9e-47d1-9244-f9e854be532b)
 
-![image](https://github.com/pravesh2892/kraftshala-assignment/assets/112716122/a87781bc-676b-4936-bdd6-c2428b525736)
+
+![image](https://github.com/pravesh2892/kraftshala-assignment/assets/112716122/69177f66-e838-4d89-83f1-abfb1761ef8a)
+
 
 
 
 ## Live Demo
 
-Check out the live application here: [Weather App Live Demo](https://kraftshala-pravesh-assignment.vercel.app/)
+Check out the live application here: [Weather App Live Demo](https://kraftshala-pravesh-ass.vercel.app/)
 
 ## Overview
 
