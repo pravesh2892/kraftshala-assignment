@@ -14,7 +14,6 @@ const DarkModeToggle = ({ darkMode, onToggle }) => {
       />
       <label className="dark_mode_label" htmlFor="darkmode-toggle">
         {darkMode ? <Sun /> : <Moon />}
-        {/* {darkMode ? "Light Mode" : "Dark Mode"} */}
       </label>
     </div>
   );

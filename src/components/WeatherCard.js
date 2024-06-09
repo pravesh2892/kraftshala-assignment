@@ -15,6 +15,12 @@ const WeatherCard = ({ weather, onRemove }) => {
     dt,
   } = weather;
 
+  // Get the icon ID from the first weather object
+  const iconId = weatherInfo[0].icon;
+
+  // Construct the icon URL
+  const iconUrl = `https://openweathermap.org/img/wn/${iconId}@2x.png`;
+
   // Create date formatter for DD/MM/YYYY format
   const dateFormatter = new Intl.DateTimeFormat("en-GB", {
     day: "2-digit",
@@ -41,6 +47,7 @@ const WeatherCard = ({ weather, onRemove }) => {
       <h2>{name}</h2>
       <div className="weather-main">
         <p className="temp">{Math.round(temp)}°C</p>
+        <img src={iconUrl} alt={weatherInfo[0].description} />
       </div>
       <div className="weather-details">
         <div className="detail-item">

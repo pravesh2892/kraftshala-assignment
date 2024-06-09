@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import WeatherCard from "./components/WeatherCard";
 import config from "./config";
 import "./App.css";
-
+const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;
 function App() {
   const [weatherList, setWeatherList] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
@@ -19,7 +19,7 @@ function App() {
 
     try {
       const res = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${config.apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=d29f227531c5ea1fb01c5ec5724772a0&units=metric`
       );
       const data = await res.json();
 
